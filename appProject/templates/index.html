@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2-ECA</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/app.css')}}">
+</head>
+<body>
+
+    <h1>Customer Analysis</h1>
+    <div class="sidebar">
+        <h2>Select Bank & Dataset</h2>
+        <form id='sidebar-selections'>
+            <div class='config-div'>
+                <label class='sidebar-label-item' for="percentDataset">Select Percentage of Dataset</label>
+                <select name="percentDataset" id="percentDataset">
+                    <option value="25%">25%</option>
+                    <option value="50%">50%</option>
+                    <option value="75%">75%</option>
+                    <option value="100%">100%</option>
+                </select>
+            </div>
+            <div class='config-div'>
+                <label class='sidebar-label-item' for="bank">Select Bank</label>
+                <select name="bank" id="bank">
+                    {% for bank in banks %}
+                        <option value="{{ bank }}">{{ bank }}</option>
+                    {% endfor %}                    
+                </select>
+            </div>
+            <div class='config-div'>
+                <label class='sidebar-label-item' for="period">Select Period</label>
+                <select name="period" id="period">
+                    {% for period in periods %}
+                        <option value="{{ period }}">{{ period }}</option>                            
+                    {% endfor %}
+                </select>
+            </div>
+        </form>
+        <div id='upload-div'>            
+            <div id="innerUpload-div">
+                <p>Select File</p>
+                <input type="file" id="uploadFile" name="files[]" hidden='hidden' multiple />
+                <button id="customFileUpload" class="sidebar-label-item" title='Only .csv or .txt files!'>Upload..</button>
+                <p id="customText">No File Chosen</p>
+                <button id="upload" class="greybtns">Submit</button>
+                <br>
+                <div id="uploadMsgDiv" >
+                    <p id="msg">Upload Status...</p>
+                </div>
+            </div>
+        </div>        
+        <p>Data Source : Uploaded</p>                   
+        <div id="listFiles" class="UI"></div> 
+        <p>Train Data By Selecting From Data Source</p>
+        <button id="trainButton" class="greybtns">Train</button>
+        <p>Data Source : Trained</p>
+        <div id="listTrainedData" class="UI"></div>
+    </div>
+    
+    <div id="chartContainer">
+        <h3>Top 10 Banks by number of complaints</h3>
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <div id="selectedOptions">
+        <h4>Percent of Data: <span id='chosenPercent'></span></h4>
+        <h4>Bank: <span id='chosenBank'></span></h4>
+        <h4>Period: <span id='chosenPeriod'></span></h4>
+    </div>
+    
+    <div id='lastContainer'>
+        <h3>Most Frequently Used Words In Complaints</h3>
+        <div id="cloud_data_container">
+            <div id="tabHolder">
+                <button class="tab" id="WordCloudBtn">Word Cloud</button>
+                <button class="tab" id="SampleDataBtn">Sample Data</button>
+            </div>
+            <div id="chartCloudOrData">
+    
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud.min.js"></script>
+    <script src="{{url_for('static',filename='js/app.js')}}"></script>
+        
+</body>
+</html>

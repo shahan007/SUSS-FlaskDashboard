@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;    
+}
+
+h1{
+    margin: 0;
+    padding: 12px 0 12px 90px;
+    background-color: black;
+    color: white;
+}
+
+.sidebar{        
+    width: 24%;    
+    min-height: 150vh;
+    height: 100%;
+    display: inline-block;
+    background-color: #dee3e2;    
+}
+
+.sidebar > h2{
+    margin: 2rem auto 2.5rem 20px;
+}
+
+#sidebar-selections{
+    position: relative;
+    top: -10px;
+}
+
+.config-div{
+    text-align: left;
+    margin: 9% 0 9% 20px;    
+}
+
+.sidebar-label-item{
+    display: block;
+    padding-bottom: 1rem;
+}
+
+select{
+    width: 60%;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+}
+
+select:focus{
+    border: 3px whitesmoke ridge;
+}
+
+option:nth-of-type(even){
+    background-color: #1e80e2;
+}
+
+option:nth-of-type(odd){
+    background-color: #1089ff;
+}
+
+#selectedOptions{
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    padding: 4px;
+    margin-right: 4px;
+    color: rgb(73, 102, 230);
+    width: 16%;
+}
+
+h3{
+    margin-bottom:3%;
+    text-align: left;
+}
+
+#chartContainer{
+    width: 53%;
+    height: 380px;
+    display: inline-block;
+    position: absolute;
+    margin: 1% 1% 1% 3%;
+    padding: 8px;
+}
+
+
+#innerUpload-div{
+    text-align: left;
+    margin: 9% 0 9% 20px;
+}
+
+#msg{
+    font-size: small;    
+}
+.red {
+    color: #ff0033;    
+}
+
+.green {
+    color: #4BB543;    
+}
+
+.grey{
+    color: #9F9F97;
+}
+
+#customFileUpload{
+    outline: none;
+    border: none;    
+    width: 60%;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#customText{
+    color: rgb(134, 134, 134);
+    font-size: medium;
+}
+
+
+.greybtns{    
+    margin-bottom: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(141, 138, 138);
+    color: white;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+}
+
+.greybtns:hover{
+    background-color: aliceblue;    
+    color: black;    
+}
+
+#uploadMsgDiv{
+    width: 68%;
+    height: 90px;
+    max-height: 90px;
+    padding: 2%;
+    overflow-y: auto;   
+    border: 2px solid rgba(150, 149, 149, 0.856) ;
+    border-radius: 4px;
+    background-color: white;    
+    display: inline-block;    
+}
+
+#upload-div + p{
+    margin-left: 20px;
+    font-size: small;
+    color: rgb(90, 89, 89);
+}
+
+.UI {
+    width: 50%;
+    height: 250px;
+    margin: 1% 0 12% 20px;
+    padding: 4%;
+    border: 3px solid rgba(134, 134, 134, 0.856) ;
+    border-radius: 6px;
+    background-color: white;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.filename{
+    padding: 1%;
+    color: rgb(99, 97, 97);
+    font-size: 13px;
+    transition: all 170ms ease-in-out;      
+}
+.filename:hover{
+    color: white;
+    cursor: pointer;
+    background-color:  rgba(150, 149, 149, 0.856) !important;
+}
+
+.filename:active{
+    color: rgb(255, 85, 122) !important;    
+    background-color: rgba(190, 121, 233, 0.568) !important;    
+    transform: scale(1.2);
+}
+
+hr{
+    margin: 0;
+    border: none;
+    border-bottom: 2px solid rgba(192, 192, 192, 0.61);    
+}
+
+
+#lastContainer{
+    width: 70%;
+    height: 520px;
+    display: inline-block;
+    position: absolute;
+    margin: 1% 1% 1% 3%;
+    top: 500px;    
+    text-align: center;
+}
+
+#cloud_data_container{ 
+    height: 80%;
+    margin: auto;
+}
+#tabHolder{
+    height: 10%;
+    background-color: #dee3e2;
+    text-align: center;
+}
+.tab{    
+    width: 49.7%;
+    height: 100%;
+    padding: 0;    
+    font-weight: bolder;
+    font-size: larger;    
+    outline: none;
+    border: none;    
+    background-color: #dee3e2; 
+    transition: all 230ms ease-in-out;
+}
+.tab:hover{
+    background-color: black;
+    color: white;
+}
+
+.tab:focus{
+    background-color: aliceblue;
+    color: #1089ff;
+}
+
+#chartCloudOrData{       
+    height: 90%;
+    border: 5px solid #dee3e2  !important;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;    
+}
+
+table {
+    width: 100%;                
+    table-layout: fixed;
+    display: block;
+    text-align: left;
+    overflow-y: scroll;
+    height: 350px !important;
+    font-size: x-small;
+    margin-top: 5px;
+}
+
+thead{
+    background-color: black;
+    color: white;
+    font-weight: bolder;    
+    font-size: large;
+}
+
+td {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    word-wrap: break-word;
+    padding: 2%;
+    box-sizing: border-box;
+} 
+
+tbody > tr:nth-of-type(odd){
+    background-color: #e0e0e0c4;
+}
+
+#listFiles + p , .greybtns + p{
+    margin-left: 20px;
+    font-size: small;
+    color: rgb(90, 89, 89);    
+}
+
+#trainButton{
+    margin: 2% 0 2% 20px;    
+}
