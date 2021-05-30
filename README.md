@@ -12,6 +12,7 @@
     <h3 style='font-weight:650;text-decoration:underline;'>Setting up a development environment</h3>
     
     ```
+    
     # Clone the code repository
     git clone https://github.com/lingthio/Flask-User-starter-app.git
 
@@ -20,6 +21,7 @@
 
     # Install required dependencies
     pip install -r requirements.txt
+    
     ```
     
 </div>
