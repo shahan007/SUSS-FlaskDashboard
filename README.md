@@ -10,9 +10,9 @@
 </p>
 <div>
     <h3 style='font-weight:650;text-decoration:underline;'>Setting up a development environment</h3>
-    `
-    # Clone the code repository into ~/dev/my_app
-    git clone https://github.com/lingthio/Flask-User-starter-app.git my_app
+    ```
+    # Clone the code repository
+    git clone https://github.com/lingthio/Flask-User-starter-app.git
 
     # Create the 'my_app' virtual environment
     mkvirtualenv -p PATH/TO/PYTHON my_app
@@ -21,7 +21,7 @@
     cd ~/dev/my_app
     workon my_app
     pip install -r requirements.txt
-    `
+    ```
 </div>
 <br>
 <div>
