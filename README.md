@@ -10,10 +10,9 @@
 </p>
 <div>
     <h3 style='font-weight:650;text-decoration:underline;'>Setting up a development environment</h3>
+    
     ```
     # Clone the code repository into ~/dev/my_app
-    mkdir -p ~/dev
-    cd ~/dev
     git clone https://github.com/lingthio/Flask-User-starter-app.git my_app
 
     # Create the 'my_app' virtual environment
