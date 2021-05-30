@@ -22,7 +22,7 @@
     
 </div>
 
-```
+```python
 def hello():
     print('hello')
 ```
