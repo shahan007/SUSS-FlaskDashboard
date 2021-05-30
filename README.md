@@ -14,12 +14,10 @@
     # Clone the code repository
     git clone https://github.com/lingthio/Flask-User-starter-app.git
 
-    # Create the 'my_app' virtual environment
-    mkvirtualenv -p PATH/TO/PYTHON my_app
+    # Create virtual environment
+    python -m venv venv
 
-    # Install required Python packages
-    cd ~/dev/my_app
-    workon my_app
+    # Install required dependencies
     pip install -r requirements.txt
     ```
 </div>
