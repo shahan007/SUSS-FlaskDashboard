@@ -21,10 +21,12 @@
     pip install -r requirements.txt
     
 </div>
-```python
+
+```
 def hello():
     print('hello')
 ```
+
 <br>
 <div>
     <h3 style='font-weight:650;text-decoration:underline;'>Breif App Info:</h3>
