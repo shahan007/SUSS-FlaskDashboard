@@ -44,7 +44,7 @@
         DataSource & Feedback models have already been created and stored in ./data/data/data.sqlite.    
         <br>    
         App relies on pandas for data analysis and Flask-Sqlalchemy & Flask-Migrate for storing and migration of data models.
-        <p><span style='color:orange;'>Major App Upgrade:</span><br> From the discussion forums and this ECA which asked us to query from models, I made use of Feedback model.<br>DataSource Model Stores the files uploaded information with relationship to Feedback model (one-to-many) where the Feedback model stores all the feedback information from  the file that is uploaded. Feedback model has a "datasrc_id" ForeignKey that contains the data file id it belongs to.</p>           
+        <p><span style='color:orange;'
     </p>
 </div>
 <br>
