@@ -4,7 +4,7 @@
     This app uses Flask as the framework for web-development.
     <br>    
     <small>
-        (I have attached "data.csv" file from the required (<a href="https://raw.githubusercontent.com/mengchoontan/school-239/master/complaints-2020-02-08_03_28.csv">link</a>) and the other file is "footballersComplaints.csv" slightly custom modified by me to see the changes and stuff)
+        (I have attached "data.csv" file from the required (<a href="https://raw.githubusercontent.com/mengchoontan/school-239/master/complaints-2020-02-08_03_28.csv">link</a>) and the other file is "footballersComplaints.csv" slightly custom modified by me to select file)
     </small>
 
 </p>
