@@ -9,12 +9,22 @@
 
 </p>
 <div>
-    <h3 style='font-weight:650;text-decoration:underline;'>Starting the app:</h3>
-    <p>
-        Firsly install the <strong>requirments.txt</strong> file in your newly created venv package
-        <br>
-        <strong>run.py</strong> file needs to be run to start the app after your venv package has been set.
-    </p>
+    <h3 style='font-weight:650;text-decoration:underline;'>Setting up a development environment</h3>
+    ```
+    # Clone the code repository into ~/dev/my_app
+    mkdir -p ~/dev
+    cd ~/dev
+    git clone https://github.com/lingthio/Flask-User-starter-app.git my_app
+
+    # Create the 'my_app' virtual environment
+    mkvirtualenv -p PATH/TO/PYTHON my_app
+
+    # Install required Python packages
+    cd ~/dev/my_app
+    workon my_app
+    pip install -r requirements.txt
+    ```
+
 </div>
 <br>
 <div>
