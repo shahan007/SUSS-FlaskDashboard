@@ -21,7 +21,7 @@
     pip install -r requirements.txt
     
 </div>
-```
+```python
 def hello():
     print('hello')
 ```
