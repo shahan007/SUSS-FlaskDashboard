@@ -10,20 +10,20 @@
 </p>
 <div>
     <h3 style='font-weight:650;text-decoration:underline;'>Setting up a development environment</h3>
-    
-    ```
+   
     # Clone the code repository
-    git clone https://github.com/lingthio/Flask-User-starter-app.git
-    ```
-    ```
+    git clone https://github.com/shahan007/SUSS-FlaskDashboard
+    
     # Create virtual environment
     python -m venv venv
-    ```
-    ```
+    
     # Install required dependencies
-    pip install -r requirements.txt
-    ``` 
+    pip install -r requirements.txt    
 </div>
+
+#hibasd
+asd
+
 <br>
 <div>
     <h3 style='font-weight:650;text-decoration:underline;'>Breif App Info:</h3>
