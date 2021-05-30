@@ -20,10 +20,6 @@
     # Install required dependencies
     pip install -r requirements.txt    
 </div>
-
-#hibasd
-asd
-
 <br>
 <div>
     <h3 style='font-weight:650;text-decoration:underline;'>Breif App Info:</h3>
