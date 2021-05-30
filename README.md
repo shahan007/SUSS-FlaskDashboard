@@ -9,7 +9,7 @@
 
 </p>
 <div>
-    <h3 style='font-weight:650;text-decoration:underline;'>Setting up a development environment</h3>
+    <h3>Setting up a development environment</h3>
    
     # Clone the code repository
     git clone https://github.com/shahan007/SUSS-FlaskDashboard
@@ -22,7 +22,7 @@
 </div>
 <br>
 <div>
-    <h3 style='font-weight:650;text-decoration:underline;'>Running the app</h3>
+    <h3>Running the app</h3>
    
 </div>
 <br>
