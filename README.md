@@ -22,6 +22,11 @@
 </div>
 <br>
 <div>
+    <h3 style='font-weight:650;text-decoration:underline;'>Running the app</h3>
+   
+</div>
+<br>
+<div>
     <h3 style='font-weight:650;text-decoration:underline;'>Breif App Info:</h3>
     <p>    
         <strong>appProject</strong> package contains all the files required for the development of this app.
