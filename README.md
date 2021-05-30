@@ -23,7 +23,12 @@
 <br>
 <div>
     <h3>Running the app</h3>
-   
+    #setting environment variables
+    export FLASK_APP=run.py
+    export FLASK_DEBUG=1 (optional)
+    
+    #run the file
+    flask run
 </div>
 <br>
 <div>
