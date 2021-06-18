@@ -8,4 +8,4 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOAD_FOLDER                  = basedir + '\\data\\files'
     ALLOWED_EXTENSIONS             = set(['csv', 'txt'])    
-    SECRET_KEY                     = 'shahan'
+    SECRET_KEY                     = 'secret'
