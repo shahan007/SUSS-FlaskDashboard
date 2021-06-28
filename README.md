@@ -20,7 +20,6 @@
     # Install required dependencies
     pip install -r requirements.txt    
 </div>
-<br>
 <div>
     <h3>Running the app</h3>
     
