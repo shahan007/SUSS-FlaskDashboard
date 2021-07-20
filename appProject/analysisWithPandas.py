@@ -78,10 +78,7 @@ def getMeWordCloudData(data):
             # processed and charted via jqCloud             
             array.append({'text':k,'weight':v})         
     return array
-
     
-
-# ----------Answer to 2(e)-----------
 # The Follwoing is my routine to compute Sentiment of each feedback in the model
 # this function accepts an array of feebacks in strings
 # it returns a new array which contains an array of feedback info along with its Sentiment Type 
